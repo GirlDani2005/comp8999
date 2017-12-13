@@ -1,249 +1,465 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%2345678901234567890123456789012345678901234567890123456789012345678901234567890
-%        1         2         3         4         5         6         7         8
+\documentclass[11pt, letterpaper, onecolumn]{article}
 
-\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out
-                                                          % if you need a4paper
-%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
-                                                          % paper
+\usepackage{fullpage}
+\usepackage{times}
 
-\IEEEoverridecommandlockouts                              % This command is only
-                                                          % needed if you want to
-                                                          % use the \thanks command
-\overrideIEEEmargins
-% See the \addtolength command later in the file to balance the column lengths
-% on the last page of the document
+\usepackage{graphicx}
 
+\usepackage[pdftex]{hyperref}
+\hypersetup{pdftitle={}, pdfauthor={}, pdfkeywords={}, bookmarksnumbered, pdfstartview={FitH}, colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black, breaklinks=true}
 
-
-% The following packages can be found on http:\\www.ctan.org
-%\usepackage{graphics} % for pdf, bitmapped graphics files
-%\usepackage{epsfig} % for postscript graphics files
-%\usepackage{mathptmx} % assumes new font selection scheme installed
-%\usepackage{times} % assumes new font selection scheme installed
-%\usepackage{amsmath} % assumes amsmath package installed
-%\usepackage{amssymb}  % assumes amsmath package installed
-
-\title{\LARGE \bf
-Preparation of Papers for IEEE Sponsored Conferences \& Symposia*
-}
-
-%\author{ \parbox{3 in}{\centering Huibert Kwakernaak*
-%         \thanks{*Use the $\backslash$thanks command to put information here}\\
-%         Faculty of Electrical Engineering, Mathematics and Computer Science\\
-%         University of Twente\\
-%         7500 AE Enschede, The Netherlands\\
-%         {\tt\small h.kwakernaak@autsubmit.com}}
-%         \hspace*{ 0.5 in}
-%         \parbox{3 in}{ \centering Pradeep Misra**
-%         \thanks{**The footnote marks may be inserted manually}\\
-%        Department of Electrical Engineering \\
-%         Wright State University\\
-%         Dayton, OH 45435, USA\\
-%         {\tt\small pmisra@cs.wright.edu}}
-%}
-
-\author{Huibert Kwakernaak$^{1}$ and Pradeep Misra$^{2}$% <-this % stops a space
-\thanks{*This work was not supported by any organization}% <-this % stops a space
-\thanks{$^{1}$H. Kwakernaak is with Faculty of Electrical Engineering, Mathematics and Computer Science,
-        University of Twente, 7500 AE Enschede, The Netherlands
-        {\tt\small h.kwakernaak at papercept.net}}%
-\thanks{$^{2}$P. Misra is with the Department of Electrical Engineering, Wright State University,
-        Dayton, OH 45435, USA
-        {\tt\small p.misra at ieee.org}}%
-}
+%
+% SDF's macros!
+%
+\usepackage[macrosOff]{mymacros}
+% Set the option to macrosOff when you are ready to submit the final version.
 
 
 \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\title{Enhancing Pre-K Curricula via Creative Computing}
 
+\author{%
+Danielle L. Jones\\%
+Department of Computer Science\\%
+University of Memphis\\%
+Memphis, Tennessee, USA\\%
+\href{mailto:dljones9@memphis.edu}{dljones9@memphis.edu}%
+}
+
+\date{December 13, 2017}
 
 \maketitle
-\thispagestyle{empty}
-\pagestyle{empty}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{abstract}
-
-This electronic document is a ÒliveÓ template. The various components of your paper [title, text, heads, etc.] are already defined on the style sheet, as illustrated by the portions given in this document.
-
-\end{abstract}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{INTRODUCTION}
-
-This template, modified in MS Word 2003 and saved as ÒWord 97-2003 \& 6.0/95 Ð RTFÓ for the PC, provides authors with most of the formatting specifications needed for preparing electronic versions of their papers. All standard paper components have been specified for three reasons: (1) ease of use when formatting individual papers, (2) automatic compliance to electronic requirements that facilitate the concurrent or later production of electronic products, and (3) conformity of style throughout a conference proceedings. Margins, column widths, line spacing, and type styles are built-in; examples of the type styles are provided throughout this document and are identified in italic type, within parentheses, following the example. Some components, such as multi-leveled equations, graphics, and tables are not prescribed, although the various table text styles are provided. The formatter will need to create these components, incorporating the applicable criteria that follow.
-
-\section{PROCEDURE FOR PAPER SUBMISSION}
-
-\subsection{Selecting a Template (Heading 2)}
-
-First, confirm that you have the correct template for your paper size. This template has been tailored for output on the US-letter paper size. Please do not use it for A4 paper since the margin requirements for A4 papers may be different from Letter paper size.
-
-\subsection{Maintaining the Integrity of the Specifications}
-
-The template is used to format your paper and style the text. All margins, column widths, line spaces, and text fonts are prescribed; please do not alter them. You may note peculiarities. For example, the head margin in this template measures proportionately more than is customary. This measurement and others are deliberate, using specifications that anticipate your paper as one part of the entire proceedings, and not as an independent document. Please do not revise any of the current designations
-
-\section{MATH}
-
-Before you begin to format your paper, first write and save the content as a separate text file. Keep your text and graphic files separate until after the text has been formatted and styled. Do not use hard tabs, and limit use of hard returns to only one return at the end of a paragraph. Do not add any kind of pagination anywhere in the paper. Do not number text heads-the template will do that for you.
-
-Finally, complete content and organizational editing before formatting. Please take note of the following items when proofreading spelling and grammar:
-
-\subsection{Abbreviations and Acronyms} Define abbreviations and acronyms the first time they are used in the text, even after they have been defined in the abstract. Abbreviations such as IEEE, SI, MKS, CGS, sc, dc, and rms do not have to be defined. Do not use abbreviations in the title or heads unless they are unavoidable.
-
-\subsection{Units}
-
-\begin{itemize}
-
-\item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as Ò3.5-inch disk driveÓ.
-\item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
-\item Do not mix complete spellings and abbreviations of units: ÒWb/m2Ó or Òwebers per square meterÓ, not Òwebers/m2Ó.  Spell out units when they appear in text: Ò. . . a few henriesÓ, not Ò. . . a few HÓ.
-\item Use a zero before decimal points: Ò0.25Ó, not Ò.25Ó. Use Òcm3Ó, not ÒccÓ. (bullet list)
-
-\end{itemize}
-
-
-\subsection{Equations}
-
-The equations are an exception to the prescribed specifications of this template. You will need to determine whether or not your equation should be typed using either the Times New Roman or the Symbol font (please no other font). To create multileveled equations, it may be necessary to treat the equation as a graphic and insert it into the text after your paper is styled. Number equations consecutively. Equation numbers, within parentheses, are to position flush right, as in (1), using a right tab stop. To make your equations more compact, you may use the solidus ( / ), the exp function, or appropriate exponents. Italicize Roman symbols for quantities and variables, but not Greek symbols. Use a long dash rather than a hyphen for a minus sign. Punctuate equations with commas or periods when they are part of a sentence, as in
-
-$$
-\alpha + \beta = \chi \eqno{(1)}
-$$
-
-Note that the equation is centered using a center tab stop. Be sure that the symbols in your equation have been defined before or immediately following the equation. Use Ò(1)Ó, not ÒEq. (1)Ó or Òequation (1)Ó, except at the beginning of a sentence: ÒEquation (1) is . . .Ó
-
-\subsection{Some Common Mistakes}
-\begin{itemize}
-
-
-\item The word ÒdataÓ is plural, not singular.
-\item The subscript for the permeability of vacuum ?0, and other common scientific constants, is zero with subscript formatting, not a lowercase letter ÒoÓ.
-\item In American English, commas, semi-/colons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
-\item A graph within a graph is an ÒinsetÓ, not an ÒinsertÓ. The word alternatively is preferred to the word ÒalternatelyÓ (unless you really mean something that alternates).
-\item Do not use the word ÒessentiallyÓ to mean ÒapproximatelyÓ or ÒeffectivelyÓ.
-\item In your paper title, if the words Òthat usesÓ can accurately replace the word ÒusingÓ, capitalize the ÒuÓ; if not, keep using lower-cased.
-\item Be aware of the different meanings of the homophones ÒaffectÓ and ÒeffectÓ, ÒcomplementÓ and ÒcomplimentÓ, ÒdiscreetÓ and ÒdiscreteÓ, ÒprincipalÓ and ÒprincipleÓ.
-\item Do not confuse ÒimplyÓ and ÒinferÓ.
-\item The prefix ÒnonÓ is not a word; it should be joined to the word it modifies, usually without a hyphen.
-\item There is no period after the ÒetÓ in the Latin abbreviation Òet al.Ó.
-\item The abbreviation Òi.e.Ó means Òthat isÓ, and the abbreviation Òe.g.Ó means Òfor exampleÓ.
-
-\end{itemize}
-
-
-\section{USING THE TEMPLATE}
-
-Use this sample document as your LaTeX source file to create your document. Save this file as {\bf root.tex}. You have to make sure to use the cls file that came with this distribution. If you use a different style file, you cannot expect to get required margins. Note also that when you are creating your out PDF file, the source file is only part of the equation. {\it Your \TeX\ $\rightarrow$ PDF filter determines the output file size. Even if you make all the specifications to output a letter file in the source - if you filter is set to produce A4, you will only get A4 output. }
-
-It is impossible to account for all possible situation, one would encounter using \TeX. If you are using multiple \TeX\ files you must make sure that the ``MAIN`` source file is called root.tex - this is particularly important if your conference is using PaperPlaza's built in \TeX\ to PDF conversion tool.
-
-\subsection{Headings, etc}
-
-Text heads organize the topics on a relational, hierarchical basis. For example, the paper title is the primary text head because all subsequent material relates and elaborates on this one topic. If there are two or more sub-topics, the next level head (uppercase Roman numerals) should be used and, conversely, if there are not at least two sub-topics, then no subheads should be introduced. Styles named ÒHeading 1Ó, ÒHeading 2Ó, ÒHeading 3Ó, and ÒHeading 4Ó are prescribed.
-
-\subsection{Figures and Tables}
-
-Positioning Figures and Tables: Place figures and tables at the top and bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be below the figures; table heads should appear above the tables. Insert figures and tables after they are cited in the text. Use the abbreviation ÒFig. 1Ó, even at the beginning of a sentence.
-
-\begin{table}[h]
-\caption{An Example of a Table}
-\label{table_example}
-\begin{center}
-\begin{tabular}{|c||c|}
-\hline
-One & Two\\
-\hline
-Three & Four\\
-\hline
-\end{tabular}
-\end{center}
-\end{table}
-
-
-   \begin{figure}[thpb]
-      \centering
-      \framebox{\parbox{3in}{We suggest that you use a text box to insert a graphic (which is ideally a 300 dpi TIFF or EPS file, with all fonts embedded) because, in an document, this method is somewhat more stable than directly inserting a picture.
-}}
-      %\includegraphics[scale=1.0]{figurefile}
-      \caption{Inductance of oscillation winding on amorphous
-       magnetic core versus DC bias magnetic field}
-      \label{figurelabel}
-   \end{figure}
-   
-
-Figure Labels: Use 8 point Times New Roman for Figure labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. As an example, write the quantity ÒMagnetizationÓ, or ÒMagnetization, MÓ, not just ÒMÓ. If including units in the label, present them within parentheses. Do not label axes only with units. In the example, write ÒMagnetization (A/m)Ó or ÒMagnetization {A[m(1)]}Ó, not just ÒA/mÓ. Do not label axes with a ratio of quantities and units. For example, write ÒTemperature (K)Ó, not ÒTemperature/K.Ó
-
-\section{CONCLUSIONS}
-
-A conclusion section is not required. Although a conclusion may review the main points of the paper, do not replicate the abstract as the conclusion. A conclusion might elaborate on the importance of the work or suggest applications and extensions. 
-
-\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
-                                  % on the last page of the document manually. It shortens
-                                  % the textheight of the last page by a suitable amount.
-                                  % This command does not take effect until the next page
-                                  % so it should come on the page before the last. Make
-                                  % sure that you do not shorten the textheight too much.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\section{Introduction}
+
+\Intent{Students are interested in STEM areas, but few are academically ready for the rigor of the first-year college courses for them to major in science, technology, engineering or math.}
+%
+Few students are academically ready for the rigor of the first-year college courses for science, technology, engineering, or math (STEM) majors.
+%
+According to the ACT's "The Condition of STEM 2016" report, 50 percent of the ACT-tested U.S. graduates from the classes of 2012-2016 have consistently expressed an interest in STEM majors and careers. 
+%
+While 2016 data showed that one million students articulated (via introspection without the assistance of a list of options) an interest in STEM, only 26 percent of met the ACT STEM benchmark, which is an indicator of success in 1st-year college STEM courses (e.g. calculus, general biology, general chemistry, and physics) and only 35 percent had previously participation in a related activity \cite{act2016}.
+
+\Intent{Due to this lack of preparation, the U.S. STEM fields are projected to see a shortage of qualified U.S. workers soon.}
+%
+Due to this lack of preparation, U.S. STEM fields are projected to see a shortage of qualified U.S. workers soon.
+%
+According to the American Action Forum (AAF), the U.S. will be short 1.1 million STEM workers overall in 2024 and approximately 91 percent of the unmet demand will be for U.S. citizens \cite{varas2016}.
+%
+Between 2009 - 2015,  STEM employment increased by 817,260 jobs (10.5 percent) verses the 5.2 percent total growth of non-STEM occupations ~\cite{fayer2017spotlightstat}.
+%
+Projections for 2014 - 2024 has STEM employment growing 8.9 percent  which includes computer-related occupations, which alone are projected to create 488,500 new jobs (12.5 percent increase) ~\cite{noonan2017}.
+%
+Though the number of graduates who attained degrees in STEM increased by 28 percent from 2008 to 2014, the number of engineering and science graduate students on temporary student visas rose by 38 percent during that same time period \cite{nces2015des}.
+ 
+ 
+\Intent{This area’s problem is further compounded by the diversity gap that is further widening because of women’s interest declining, minority undergraduates decreasing, and American graduate students not increasing.}
+%
+Further complicating the issue of the STEM workforce shortage is that the diversity gap is only not shrinking.
+%
+Women are showing little interest in STEM at the high school level.
+%
+With only 4 percent of female high schoolers reporting an interest in engineering and/or technology, this greatly contrast them with there male counterparts (34 percent) . 
+%
+Even at the postsecondary level, women are not attaining degrees in STEM areas at the same percent as males.
+%
+Of degrees granted to females, only 3 percent of associate degrees, 8 percent of bachelor's degrees, and 6 percent of graduate degrees were in a STEM field. 
+%
+By contrast, degrees granted to males in STEM fields composed 8 percent of associate degrees, 13 percent of bachelor's degrees, and 11 percent of graduate degrees \cite{stemindex2017}.
+%
+Racial diversity is seeing little to no change in the STEM degree attainment area.
+%
+The number of African American, Asian/Pacific Islander, and American Indian/ Alaska Native STEM graduates stayed roughly the same from 2008 to 2014 .
+%
+Hispanics did show an increase STEM degree attainment by roughly 2 percent \cite{nces2015des}.
+
+\subsection{Early Intervention}
+
+\Intent{Researchers have been discussing the need for early STEM interventions for over a decade.}
+%
+Researchers have been discussing the need for earlier STEM interventions for over half a millennium ~\cite{Wing2006CommACM,Barr2011ACMInroads,Guzdial2008CommACM,Barr2011LLT,bhef2014}.
+%
+In the 1960s,  Alan Perlis argued that college students of all disciplines needed to learn about computing but not until 20 years later did the Logo programming address computing education for pre-college students \cite{Grover2013EduResearcher}.
+%
+Jeannette Wing sparked a renewal of interest in 2006 when she defined and called for computational thinking for all \cite{Wing2006CommACM}.
+%
+Though one definition has not be agreed upon, computational thinking has been said to be "the thought processes involved in formulating a problem and expressing its solution(s) in such a way that a computer -  human or machine -  can effectively carry out" ~\cite{wing2014computational}.
+%
+
+\Intent{Computer Science Education researchers specifically are addressing the need for basic computational thinking skills for all ages.}
+%
+In recent years, researchers have been empirically evaluating computer programming in early childhood education to understand how programming can benefit pre-college students. 
+%
+Studies have found that children as young as 4 years old can build and program simple robotics projects and learning a range of engineering and robotics concepts during the process ~\cite{bers2002itcea, cejka2006ijee,perlman1976mit,wyeth2008jls, sullivan2013jite,sullivan2015ijde}. 
+%
+Studies have also suggested that children demonstrated fewer gender-based stereotypes regarding STEM careers if exposed to computer programming through a STEM curriculum at an early age  ~\cite{metz2007,steele1997americanpsych} and encountered fewer obstacles to entering technical fields ~\cite{madill2007, markert1996jtechs}. 
+%
+Earlier studies that used the text-based language, Logo showed that programming can assist with the cognitive skill develop in young children, including number sense, language skills, and visual memory
+~\cite{clements1999}. 
+%
+Because of these findings, countries like the United Kingdom, have made learning to program and solve computational problems a required curricular framework ~\cite{uk2014natlcurriculum}.
+%
+MIT President Emerita Susan Hockfield stated, "We can't wait until college to encourage young people to pursue STEM. You have to start very early, like in kindergarten, and increase the exposure, increase the enthusiasm. At the heart of it, it's increasing confidence." ~\cite{zazulia2016usnews}
+
+\subsection{Addressing the Gap}
+\Intent{The spreading of computational thinking for K-12 is being addressed at all levels}
+%
+The spreading of computational thinking to pre-college is being addressed by all from professional organizations, industry, non-profits, academia, to government policy-makers through outreach programs, tool creation, and national initiatives.
+%
+In his 2016 State of the Union address, former U.S. President Barack Obama requested Congress budget for roughly \$4 billion to fund the training of computing teachers, access to high-quality teaching materials , and build regional partnerships all in the hopes that all students can get the change to learn computer science in school. 
+%
+The National Science Foundation has promised to allot \$120 million for computer science education research. 
+%
+Even non-profits like Black Girls Code are doing their part to move the needle forward by hosting workshops to teach children ages 7-17 to create mobile apps and websites.
+%
+Professional organizations such as the Society of Women Engineers and the National Society of Black Engineers have outreach events at their conferences and sponsored events to bring computing opportunities to pre-college students.
+%
+Academia is doing the research required to validate tools and curriculum  for usage with the various levels and skills of pre-college students.
+%
+Companies such as Microsoft, Google, and Salesforces.org are offering philanthropic funding to expand computer science opportunities through sponsoring hackathons and hour-of-codes.
+%
+But few of these initiatives are being designed for young children in pre-kindergarten to second grade (ages 3-7). 
+%
+
+\Intent{To address this pedagogical gap, we propose a new pedagogical design to be used within existing Pre-K curricula to support age appropriate learning goals and early computational thinking skill development.}
+%
+To address this pedagogical gap, we propose a new pedagogical design to be used within existing pre-kindergarten curricula to support age-level learning goals and early computational thinking skill development.
+%
+Tools and curricula do exist that specifically teach computational thinking concepts but none have integrated these low threshold, high-ceiling, wide wall aids into existing general education curriculum used by school systems today.
+
+\Intent{In this paper, we present pedagogies for use in Pre-K general education and an empirical evaluation.}
+%
+In this paper, we present a pedagogy for use in pre-kindergarten general education and proposed an empirical evaluation.
+%
+This study will document a computational thinking based pedagogy's effects on early childhood learning outcomes.
+%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Background \& Related Work}
+\Intent{Intro paragraph}
+%
+The following literature review examines research relevant to early childhood education and STEM curricula for young children.
+%
+This literature review is not an exhaustive summary of all issues  relevant to the proposed pedagogy but highlights the most important  issues in the literature. 
+%
+
+\subsection{Early Childhood Education}
+\Intent{Early childhood education is important period in child's development designed around a child's physical, emotional, social, language, and cognitive skills. }
+%
+Early childhood education is important period in child's development designed around a child's physical, emotional, social, language, and cognitive skills.
+%
+During toddlerhood (18-24 months) through early childhood (age 7) , a child is at the pre-operational stage of cognitive development when language, memory, and imagination are developing.
+%
+With exposure and organized lesson plans, young children can be taught non-complex symbolical concepts such as numbers and colors. 
+%
+Concrete logic such as cause and effect, time, and comparison is harder for them to grasp due to their thinking being based on intuition.~cite{wood2001}
+%
+
+\Intent{The modern early childhood education philosophy of  "learning through play" was pioneered by the research of Jean Piaget.}
+%
+Modern early childhood education is designed for grades pre-kindergarten to second grade (ages 3-7)  and is rooted in the philosophy of  "learning through play" which was pioneered by Jean Piaget who famously proclaimed that "Play is the work of children."%
+%
+Piaget posited that play led to meeting the physical, cognitive, language, emotional and social needs  of a child.
+%
+Teachers facilitate the learning process by providing various experience through which knowledge can be attained.
+
+Such as interest-driven learning where a children's interests or familiar examples are leverage to insure that information being that is most essential to his or her personal and individual development.
+%
+Teacher also encourage discovery learning opportunities where students get to explore and experiment to gain new and deeper understanding.
+%
+Current early childhood education theories support the notion that if a child's curiosity and imagination is engaged then learning can naturally take place.
+
+
+\Intent{Curricula, such as Desoto County Schools’ "Read It Once Again" and Shelby County Schools’ "Opening the World of Learning (OWL)" incorporate familiar children's literature into learning units that are reinforced with rhyme, rhythm, and repetition.}
+%
+Various curricula have been created specifically to address early childhood learning goals. 
+%
+Learning goals for pre-kindergarten establish self-help, social, language, early literacy, interpersonal, and gross/fine motor skills such as playing independently and with a friend; following basic classroom rules, structure, and directions; recognizing and writing some letters, numbers, and shapes; reciting rhyming words and opposite words; listening to a story and repeating back some major points; gripping a pencil and crayon correctly; writing their name in upper case letters; understanding basic math by adding, counting, sorting, classifying, measuring; recognizing sight words.
+%
+Curricula, such as Desoto County Schools’ "Read It Once Again" and Shelby County Schools’ "Opening the World of Learning (OWL)" incorporate familiar children's literature into learning units that support multiple learning goals and are reinforced with rhyme, rhythm, and repetition. 
+%
+The curricula for each school district various from state to state and county by county.
+%
+There is no one curricula that is considered superior to all the others.
+%
+
+\Intent{Our work aims to extend these and similar curricula…}
+%
+Our work aims to offer pre-kindergarten curricula a new tool that could lead to the development of computational thinking skills via a creative approach to computing.
+%
+
+\subsection{Creative Computing}
+\Intent{Creative Computing is applying the "kindergarten approach to learning" to the introduction of computational creativity and thinking via personal connections to computing by drawing upon creativity, imagination, and interests.}
+%
+Creative Computing is a curriculum was originally created by  Karen Brennan, Christan Balch, and Michelle Chung, the ScratchEd research team at the Harvard Graduate School of Education.
+%
+It is applying the "kindergarten approach to learning" to the introduction of computational creativity and thinking via firsthand computing associations that drawing upon imagination, creativity, and interests ~\cite{Resnick2007SIGCHI}.
+%
+It emphasizes the knowledge, practices, and fundamental literacies that young children need to know to be able to create recognizable computational dependent media that is apart of their daily interactions. 
+%
+Engaging in the creation of computational artifacts supports young people’s development as computational thinkers – individuals who can draw on computational concepts, practices, and perspectives in all aspects of their lives, across disciplines and contexts \cite{brennan2014creative}.
+
+%
+\Intent{Creative Computing designed tool that with design goals}
+For young children to be able to create computational artifacts, collaborative research was conducted between Massachusetts Institute of Technology and Carnegie Mellon University to produce goals for an effective tool design for young children.
+%
+The research found that the tool should have a low threshold (e.g. an un-intimating interface that gives a user immediate confidence in success), a high ceiling (e.g. powerful enough for the creation of sophisticated, complete solutions),  and wide walls (e.g. support and suggest explorations).
+%
+All of these principles went into uses when the team originally developed the Scratch programming language and environment 
+%
+These principles were further incorporated into the ScrarchJr so developmental appropriate for children with early or no literacy and arithmetic skills.
+
+\Intent{Creative Computing curricula has students create interactive collages and interactive stories}
+%
+The Creative Computing curricula has students create interactive collages and interactive stories as the computational artifact used to teach different computing concepts such as sequencing, loops, and conditionals.
+%
+A collage is a open-ended project with moving characters that have no structured mission but are freely moving or transforming at will.
+%
+Students first create collages during independent explorations of the tool and its features after learning about basic motion blocks.
+%
+Secondly, after they have been introduced to the majority of the programing blocks, students are asked to create an interactive story.
+%
+A story is a project that has one or more characters moving and/or interacting to enacted a scene from literature.
+%
+Students are able to use their imagination to come up with scenarios for characters to enact.
+
+\subsection{Existing Computing Tools}
+\Intent{Tools in both that commercial and academic domains have been created to increase awareness and interests using such an approach.}
+%
+Tools have been designed by both that commercial and academic domains to increase awareness and interests in computational thinking.
+%
+Those tools have taken three different approaches.
+%
+First, there are the software only tools that are available for free and at cost. 
+%
+For example, free tools such as Scratch, ScratchJr, Giget, Code.org, Blockly, Alice, and Khan Academy introduce computing via web games, tutorials, and animation creation exists for all ages to access. 
+%
+Paid subscription sites like Code Combat, Code Monkey, Kodable, and Tynker over some of the same resources but with individual support available.
+
+%
+Second, there are hardware only tools which are moderate to expensive toys that existing in the marketplace that introduce kids to computing concepts such as sequencing and loops. 
+%
+Fisher-Price Think \& Learn Code-a-pillar  and Thinkfun Robot Turtles board game are just a few of the commercially produced which are all physical components that require no screen time. 
+%
+Academics have created some such as the Playful Invention Company's PicoCricket kit (out of the MIT Media Lab) and Kinderlab Robotics's KIBO robotics kit (out of the DevTech Research Group at Tufts University). 
+%
+Thirdly, there are tools that require software to interaction with the physical hardware. 
+%
+Lego Mindstorms, Osmo Coding Awbie , and Proto-Max are just of few of the commercially available units that teach logic, problem solving skills, and coding.
+%
+
+\Intent{Curricula have been created for elementary schools to implement computational thinking.}
+%
+Curricula have been created for elementary schools to implement computational thinking ~\cite{Grover2013EduResearcher,Rich2017ICER,brennan2012aera}. 
+%
+Sullivan and Bers integrated their robotic curriculum in into a "Me and My Community" unit for kindergarten to second graders and found that students were able to master foundational and advanced programming concepts of a robot ~\cite{sullivan2015ijde}. 
+%
+This study found that the pre-kindergarten students need more time to understand and reinforce introductory skills thus were not able to complete the entire robotics curriculum.
+%
+Over the 8-weeks, pre-kindergartens learning just the computing concept of sequencing.
+%
+
+
+\section{Creative Computing Pedagogy for Early Childhood Education}
+\Intent{To further develop computing resources for the instruction of pre-kindergartens', our novel pedagogy is leveraging the research conducted on the Creative Computing Curriculum to integrate it into existing general education pre-kindergarten curriculum.}
+%
+We aim to improve computing resources for the instruction of pre-kindergartens' by leveraging the research conducted on the Creative Computing Curriculum into a new pedagogy that can be integrate it into existing general education pre-kindergarten curriculum.
+%
+Our goal is to successfully integrate our pedagogy to teach the single computational thinking concept of sequencing into an existing pre-kindergarten curricula.
+%
+\Intent{We will modify the ScratchJr "Animated Genres Curriculum" tasks for use with early childhood education curriculum goals.}
+%
+We will develop our novel pedagogy by modifying the ScratchJr Animated Genres Curriculum to meet early childhood education curriculum goals.
+%
+The first two lessons from the ScratchJr Animated Genres Curriculum were sub-divided into two 30-minute lesson and then revised to focus a specific curriculum goal.
+%
+In conjugation with a licensed early education educator, the researcher refined the lessons so where developmentally appropriate and that integrated or reinforced the computational thinking concept of sequencing.
+
+
+
+\subsection{Tool: PBS KIDS ScratchJr}
+\Intent{ScratchJr is an introductory programming language designed for young children to create their own interactive stories and games using characters from known public cable television shows.}
+%
+ScratchJr is a beginning programming language created for young children to build their own interactive stories and games using characters from known public cable television shows.
+%
+Using a puzzle-like graphical programming blocks, children can drag and snap together pieces to make characters sing, dance, move, and jump. 
+%
+In a recent collaboration with PBS KIDS, a new version of ScratchJr was released that allowed favorite characters from WordGirl, Nature Cat, Wild Kratts, and Peg + Cat to be available for use within projects.
+%
+"As young children code with ScratchJr, they learn how to create and express themselves with the computer, not just to interact with it...They also use math and language in a meaningful and motivating context, supporting the development of early-childhood numeracy and literacy." ~\cite{scratchjr}
+%
+
+
+\subsection{Worked Example}
+%
+\Intent{Worked examples are beneficial to cognitive load.}
+%
+Cognitive load theory provides guidelines for improving the learning of multidimensional skills and their transfer to new problems. 
+%
+One guideline states that extraneous cognitive load that is not meaningful to the construction of the current mental model should be minimized. 
+%
+Researchers have shown extraneous load can be reduced by providing the step by step instructions to solve a like problem first, followed by a problems will missing steps to be completed, and then entire problem\cite{paas2003edupsych}.
+%
+Cognitive psychology researchers have also shown learning new material is easier if it can be related previously learned material.
+%
+
+\Intent{Approaches to reducing load support children learning to code.}
+%
+Researcher have experimented with many approaches to reducing the cognitive load associated with introduction to computing. 
+
+Some have demonstrated that block-based languages require a much lower cognitive load than textual programming languages.~\cite{Price2015ICER,Weintrop2015ICER,Morrison2015ICER}
+%
+Others have tried code puzzle completion problems and found they can support learning programming constructs ~\cite{Harms2017Dissertation}.
+%
+In this study, researcher will use a the ScratchJr programming language to first create examples of computing artifact with student's repeating the activity, then having them explore the gallery of like-projects, but ultimately have students create their own projects without an example.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proposed Evaluation Method}
+\Intent{This study was designed to answer the research question: "Does computational thinking based pedagogies alter early childhood learning outcomes?"}
+
+This study was designed to answer the research question: "Does computational thinking based pedagogies alter early childhood learning outcomes?"
+
+\Intent{The goal is to validate that computational thinking additions don’t negatively affect student assessments and computational thinking skills can be gained.}
+The goal is to validate that computational thinking additions do not negatively affect student assessments and computational thinking skills can be gained.
+
+
+\subsection{Study Design}
+\Intent{To evaluate the pedagogies, a in situ classroom study will be conduct over a 4-week unit.}
+To evaluate the pedagogies, a in situ classroom study will be conduct over a 4-week unit with assessments throughout the unit. 
+
+\Intent{The study will have two treatments: lesson plans with computational thinking activities and lesson plans without.}
+The study will have two treatments: lesson plans with computational thinking activities and lesson plans without. 
+
+\subsection{Participants}
+\Intent{The participants in this study will be a classroom of SPED Pre-K students at Lewisburg Primary school in DeSoto County, MS with parent consent.}
+%
+Since we are primarily interested in the computational skills of young children, we will recruit students from a classroom of pre-kindergarten students at Lewisburg Primary School in Desoto County, MS. 
+%
+We will require each student to be ages 3-5 and have master 50 percent of the speech and language developmental milestones per their age level. 
+
+
+\subsection{Tasks}
+\Intent{Task replace 2-3 activities within each lesson plan.}
+For our study, participants will create interactive collages and animations based on the story or nursery rhyme of the week. 
+%
+By using a the story or nursery rhyme of the week , we aim to make the tasks in line with the curriculum and reinforce remembrance of the story or nursery rhyme of the week.
+%
+The tasks will involve students creating a college or animation of a page, scene, or lyric from the story or rhyme of the week within PBS KIDS ScratchJr application. 
+
+\subsection{Procedure}
+\Intent{Each treatment will be done in classroom setting with 2-15 students.} 
+
+Each treatment will be conducted in the classroom with a group of 2-15 participants. 
+%
+Each participant will have an iPad during the lesson with the PBS KIDS ScratchJr application installed and a participant account configured.
+%
+Participants will complete one project per week. 
+%
+Participants will have two lessons a week to work on project. 
+%
+Each lesson will run between 15-30 minutes. 
+
+\Intent{Two introduction lesson to PBS ScratchJr will be conducted. }
+Two introduction lessons to PBS ScratchJr will be conducted. 
+%
+In the first lesson, the teacher and researcher will play with the class the game "Simon says".
+%
+The researcher will explain why the game is dependent on properly being able to give and follow instructions and how providing clear instructions is critical to computer programming. 
+%
+Next, students will verbally direct their teacher to different destinations in throughout out the classroom. 
+%
+When given instructions does not accomplish the given task, students will be given a chance to change their instructions. 
+%
+After the activity is completed, the researcher will led a conversation about how being specific and the order of those instructions is in important in programming.
+%
+In the second lesson, the iPads will be handed to each student with the a blank PBS ScratchJr project open. 
+%
+Next, everyone in the class will watch the teacher as s/he moves a motion block (right, left, up, down, jump) to the scripting area and presses the block to make the Scratch cat move. 
+%
+Then the children will duplicate this task. 
+%
+The same will be done for the each motion block, resize block (bigger, smaller, and reset size), and visibility block (visible and invisible).
+%
+
+\Intent{For the next six lessons, the teacher will read or recite the story or nursery rhyme of the week.}
+%
+For the next six lessons, first the teacher will read or recite the story or nursery rhyme of the week. 
+%
+Each Students will then be handed an iPad with the either a blank or the previous lesson's PBS ScratchJr project open. 
+%
+Student will be directed to create or finish a project inspired  by the story or nursery rhyme to which they just listened. 
+%
+During each lesson, the teacher and researcher will be on hand to answer questions and assist students. 
+
+
+\subsection{Data Collected}
+\Intent{We will collect project data from student’s iPads, results from assessment required in curriculum, and field notes.}
+%
+We will collect project data from student’s iPads, results from assessment required in curriculum, and field notes.
+%
+Parents will be asked two weeks prior if they would like their child not to be involved.
+%
+%
+
+\subsection{Analysis}
+%
+\Intent{Statically analysis will be run between results from each treatments assessment.}
+%
+Statically analysis will be preformed between assessments results from each treatments. Descriptive statistical analysis will be run to verify statistical significance.
+%
+%
+
+\subsection{Threats to Validity}
+\Intent{The study was conducts on a small number of participants with special needs from a small above-average economic area.}
+%
+There exists valid threats that make this not generalizable.
+%
+First, the study will be conducted on a small sample size due to availability of willing participants.
+%
+Second, all participants are not developmentally average because the classroom consisting of some special education students.
+%
+Third, the students are not all from an average economic background either due to the school be in service to an affluent part of the DeSoto county.
+%
+Finally, the same teacher and researcher conducted the study with two separate groups each day the pedagogy is in use. 
+%
+The teacher and researcher which could suffer from fatigue those the second group may not get the same quality of experience as the first.
+
+\Intent{The pedagogical activities were designed for a specific curriculum with no validation for experts.}
+%
+The pedagogical activities are designed for a specific curriculum with no validation for experts.
+%
+Only teacher recommendation will be taken into account with regards to length, difficulty, and presentation.
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusion}
+\Intent{In this paper, a new pedagogy was introduced to support Pre-K general education goals and early computational thinking skill development.}
+%
+In this paper, a new pedagogy was introduced to support pre-kindergarten general education goals and early computational thinking skill development.
+%
+This pedagogy revises the Creative Computing curriculum to correlate with  specific pre-kindergarten learning goals and not just teach the computational thinking skill of sequencing.
+%
+The purpose of this pedagogy is not to require computing curriculum goals be met but to support the curriculum currently in place.
+
+\Intent{The proposed evaluation seeks to validate if computational thinking based pedagogies alter early childhood learning outcomes.}
+%
+The proposed evaluation seeks to validate if computational thinking based pedagogies alter early childhood learning outcomes.
+%
+By conducting this study, our hope is to extend knowledge on computational thinking for early childhood environments and offer a new tool.
+%
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{APPENDIX}
 
-Appendixes should appear before the acknowledgment.
-
-\section*{ACKNOWLEDGMENT}
-
-The preferred spelling of the word ÒacknowledgmentÓ in America is without an ÒeÓ after the ÒgÓ. Avoid the stilted expression, ÒOne of us (R. B. G.) thanks . . .Ó  Instead, try ÒR. B. G. thanksÓ. Put sponsor acknowledgments in the unnumbered footnote on the first page.
-
-
+\bibliographystyle{abbrv}
+\bibliography{refs}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-References are important to the reader; therefore, each citation must be complete and correct. If at all possible, references should be commonly available publications.
-
-
-
-\begin{thebibliography}{99}
-
-\bibitem{c1} G. O. Young, ÒSynthetic structure of industrial plastics (Book style with paper title and editor),Ó 	in Plastics, 2nd ed. vol. 3, J. Peters, Ed.  New York: McGraw-Hill, 1964, pp. 15Ð64.
-\bibitem{c2} W.-K. Chen, Linear Networks and Systems (Book style).	Belmont, CA: Wadsworth, 1993, pp. 123Ð135.
-\bibitem{c3} H. Poor, An Introduction to Signal Detection and Estimation.   New York: Springer-Verlag, 1985, ch. 4.
-\bibitem{c4} B. Smith, ÒAn approach to graphs of linear forms (Unpublished work style),Ó unpublished.
-\bibitem{c5} E. H. Miller, ÒA note on reflector arrays (Periodical styleÑAccepted for publication),Ó IEEE Trans. Antennas Propagat., to be publised.
-\bibitem{c6} J. Wang, ÒFundamentals of erbium-doped fiber amplifiers arrays (Periodical styleÑSubmitted for publication),Ó IEEE J. Quantum Electron., submitted for publication.
-\bibitem{c7} C. J. Kaufman, Rocky Mountain Research Lab., Boulder, CO, private communication, May 1995.
-\bibitem{c8} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ÒElectron spectroscopy studies on magneto-optical media and plastic substrate interfaces(Translation Journals style),Ó IEEE Transl. J. Magn.Jpn., vol. 2, Aug. 1987, pp. 740Ð741 [Dig. 9th Annu. Conf. Magnetics Japan, 1982, p. 301].
-\bibitem{c9} M. Young, The Techincal Writers Handbook.  Mill Valley, CA: University Science, 1989.
-\bibitem{c10} J. U. Duncombe, ÒInfrared navigationÑPart I: An assessment of feasibility (Periodical style),Ó IEEE Trans. Electron Devices, vol. ED-11, pp. 34Ð39, Jan. 1959.
-\bibitem{c11} S. Chen, B. Mulgrew, and P. M. Grant, ÒA clustering technique for digital communications channel equalization using radial basis function networks,Ó IEEE Trans. Neural Networks, vol. 4, pp. 570Ð578, July 1993.
-\bibitem{c12} R. W. Lucky, ÒAutomatic equalization for digital communication,Ó Bell Syst. Tech. J., vol. 44, no. 4, pp. 547Ð588, Apr. 1965.
-\bibitem{c13} S. P. Bingulac, ÒOn the compatibility of adaptive controllers (Published Conference Proceedings style),Ó in Proc. 4th Annu. Allerton Conf. Circuits and Systems Theory, New York, 1994, pp. 8Ð16.
-\bibitem{c14} G. R. Faulhaber, ÒDesign of service systems with priority reservation,Ó in Conf. Rec. 1995 IEEE Int. Conf. Communications, pp. 3Ð8.
-\bibitem{c15} W. D. Doyle, ÒMagnetization reversal in films with biaxial anisotropy,Ó in 1987 Proc. INTERMAG Conf., pp. 2.2-1Ð2.2-6.
-\bibitem{c16} G. W. Juette and L. E. Zeffanella, ÒRadio noise currents n short sections on bundle conductors (Presented Conference Paper style),Ó presented at the IEEE Summer power Meeting, Dallas, TX, June 22Ð27, 1990, Paper 90 SM 690-0 PWRS.
-\bibitem{c17} J. G. Kreifeldt, ÒAn analysis of surface-detected EMG as an amplitude-modulated noise,Ó presented at the 1989 Int. Conf. Medicine and Biological Engineering, Chicago, IL.
-\bibitem{c18} J. Williams, ÒNarrow-band analyzer (Thesis or Dissertation style),Ó Ph.D. dissertation, Dept. Elect. Eng., Harvard Univ., Cambridge, MA, 1993. 
-\bibitem{c19} N. Kawasaki, ÒParametric study of thermal and chemical nonequilibrium nozzle flow,Ó M.S. thesis, Dept. Electron. Eng., Osaka Univ., Osaka, Japan, 1993.
-\bibitem{c20} J. P. Wilkinson, ÒNonlinear resonant circuit devices (Patent style),Ó U.S. Patent 3 624 12, July 16, 1990. 
-
-
-
-
-
-
-\end{thebibliography}
-
-
-
-
 \end{document}
